@@ -1,0 +1,26 @@
+.navbar {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#1a1a1a ;
+    font-family: "Monospace";
+}
+
+.navbar-text__big {
+    width: 40%;
+    white-space: nowrap;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Monsterrat";
+}
+
+a.navbar-text__little {
+    text-decoration: none;
+}
+
+a.navbar-text__little:hover {
+    text-decoration: underline;
+}
