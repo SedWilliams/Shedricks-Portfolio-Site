@@ -4,11 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#1a1a1a ;
+    background-color:#1a1a1a;
     font-family: "Monospace";
 }
 
 .navbar-text__big {
+    color: #735f60;
     width: 40%;
     white-space: nowrap;
     margin: 10px;
@@ -17,8 +18,13 @@
     font-family: "Monsterrat";
 }
 
+.navbar-text__little {
+    color: #735f60;
+}
+
 a.navbar-text__little {
     text-decoration: none;
+    color: #735f60;
 }
 
 a.navbar-text__little:hover {

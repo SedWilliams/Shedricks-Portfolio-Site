@@ -22,18 +22,18 @@ export function Outsource() {
     return(
         <div className="main-container">
             <div className="outsource-section">
-                <h1 className="outsource-section__text">Socials:</h1>
-                <OutsourceSectionLink link={"https://www.youtube.com/@shedrickwilliams4175"} styleClass={"outsource-section__link"} img={"../imgs/youtube.png"} imgClass={"outsource-section__logo"}/>
-                <OutsourceSectionLink link={"https://github.com/SedWilliams"} styleClass={"outsource-section__link"} img={"../imgs/github.png"} imgClass={"outsource-section__logo"} id={"gh-logo"} />
+                <OutsourceSectionLink link={"https://www.youtube.com/@shedrickwilliams4175"} styleClass={"outsource-section__link"} img={"../../docs/assets/imgs/youtube.png"} imgClass={"outsource-section__logo"} id={"yt-logo"}/>
+                <OutsourceSectionLink link={"https://github.com/SedWilliams"} styleClass={"outsource-section__link"} img={"../../docs/assets/imgs/github.png"} imgClass={"outsource-section__logo"} id={"gh-logo"} />
+                <OutsourceSectionLink link={"https://twitter.com/swtres06"} styleClass={"outsource-section__link"} img={"../../docs/assets/imgs/twitter.png"} imgClass={"outsource-section__logo"} id={"x-logo"} />
             </div>
             <div className="outsource-section">
-                <h1 className="outsource-section__text">Coding Projects:</h1>
+                <h1 className="outsource-section__text">About me</h1>
             </div>
             <div className="outsource-section">
-                <h1 className="outsource-section__text">Journals:</h1>
+                <h1 className="outsource-section__text">Free Stuff</h1>
             </div>
             <div className="outsource-section">
-                <h1 className="outsource-section__text">Latest Inspiration:</h1>
+                <h1 className="outsource-section__text">Inspiration</h1>
             </div>
         </div>
     );
