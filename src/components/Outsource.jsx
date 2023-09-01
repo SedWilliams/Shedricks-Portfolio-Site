@@ -27,13 +27,13 @@ export function Outsource() {
                 <OutsourceSectionLink link={"https://twitter.com/swtres06"} styleClass={"outsource-section__link"} img={"imgs/twitter.png"} imgClass={"outsource-section__logo"} id={"x-logo"} />
             </div>
             <div className="outsource-section">
-                <h1 className="outsource-section__text">About me</h1>
+                <h1 className="outsource-section__text"><a href="/About" target="_blank">About Me</a></h1>
             </div>
             <div className="outsource-section">
-                <h1 className="outsource-section__text">Free Stuff</h1>
+                <h1 className="outsource-section__text"><a href="/Freebie" target="_blank">Free Stuff</a></h1>
             </div>
             <div className="outsource-section">
-                <h1 className="outsource-section__text">Inspiration</h1>
+                <h1 className="outsource-section__text"><a href="/Inspiration" target="_blank">Inspiration</a></h1>
             </div>
         </div>
     );
