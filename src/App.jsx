@@ -1,14 +1,20 @@
 import React from "react";
-import { Navbar } from "./components/Navbar";
-import { Outsource } from "./components/Outsource";
+
 import "./styles/App.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Gap } from "./pages/gap";
 
 export function App() {
 
     return(
         <div>
-            <Navbar />
-            <Outsource />
+
+            <BrowserRouter>
+                <Routes>
+                    <Route index element={ <Gap /> } />
+                    <Route path="/generalAccessPoint" element={<Gap />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

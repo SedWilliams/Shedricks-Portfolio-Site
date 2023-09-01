@@ -18,6 +18,33 @@
     font-family: "Monsterrat";
 }
 
+@media (max-width: 800px) {
+    .navbar-text__big {
+        font-size: 8vw;
+    }
+
+    h2.navbar-text__little {
+        font-size: 4vw;
+    }
+    
+    a.navbar-text__little {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .navbar-text__big {
+        font-size: 5vw;
+    }
+
+    a.navbar-text__little {
+        font-size: 2vw;
+    }
+
+    h2.navbar-text__little {
+        font-size: 2vw;
+    }
+}
 .navbar-text__little {
     color: #735f60;
 }
