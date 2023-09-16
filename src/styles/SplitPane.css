@@ -32,6 +32,14 @@
   }
 }
 
+
+/* Desktop */
+@media (min-width: 769px) {
+  .split-bio:hover {
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.7);
+  }
+}
+
 /* layout */
 .split-image__container {
   flex: 1;
@@ -47,12 +55,14 @@
 .split-bio {
   flex: 1;
   padding: 20px;
-  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0.5, 0.5);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  transition: ease box-shadow 0.25s;
 }
 
 .split-bio__header {
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: "Montserrat";
 }
 
 .split-bio__text {
@@ -60,3 +70,22 @@
   line-height: 1.5;
 }
 
+.bio-text__special {
+    font-weight: bold;
+}
+
+.split-bio__buttons button {
+    flex: 1;
+    margin: 10px 10px 10px 0px;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #ED461D;
+    transition: ease box-shadow 0.2s;
+    cursor: pointer;
+    font-family: "Montserrat";
+}
+
+.split-bio__buttons button:hover {
+    box-shadow: 0px 0px 8px 2px #F06543;
+}

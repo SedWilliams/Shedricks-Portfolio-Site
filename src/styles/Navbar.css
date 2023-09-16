@@ -13,7 +13,7 @@
 }
 
 .left-text {
-    color: #E0E0E0;
+    color: black;
 }
 
 .right {
@@ -29,6 +29,8 @@
     color: black;
     width: 40px;
     height: 40px;
+    transition: ease width 1s;
+    transition: ease height 1s;
 }
 
 #fiverr {
@@ -40,11 +42,11 @@
 #youtube {
      height: 30px;
      padding-top: 5px;
-     padding-left: 22.5px;
+     padding-left: 25px;
 }
 
 #twitter {
-    padding-left: 22.5px;
+    padding-left: 25px;
 }
 
 .right-logo {
