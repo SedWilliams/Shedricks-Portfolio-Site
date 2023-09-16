@@ -1,59 +1,58 @@
 .navbar {
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#1a1a1a;
-    font-family: "Monospace";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #575C75;
+  color: #272B2B;
+  padding: 10px 20px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-text__big {
-    color: #735f60;
-    width: 40%;
-    white-space: nowrap;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    font-family: "Monsterrat";
+.left {
+  flex: 1;
 }
 
-@media (max-width: 800px) {
-    .navbar-text__big {
-        font-size: 8vw;
-    }
-
-    h2.navbar-text__little {
-        font-size: 4vw;
-    }
-    
-    a.navbar-text__little {
-        font-size: 4vw;
-    }
+.left-text {
+    color: #E0E0E0;
 }
 
-@media (min-width: 800px) {
-    .navbar-text__big {
-        font-size: 5vw;
-    }
-
-    a.navbar-text__little {
-        font-size: 2vw;
-    }
-
-    h2.navbar-text__little {
-        font-size: 2vw;
-    }
-}
-.navbar-text__little {
-    color: #735f60;
+.right {
+  display: flex;
+  gap: 20px;
 }
 
-a.navbar-text__little {
+.right a {
     text-decoration: none;
-    color: #735f60;
 }
 
-a.navbar-text__little:hover {
-    text-decoration: underline;
+.right-logo {
+    color: black;
+    width: 40px;
+    height: 40px;
+}
+
+#fiverr {
+    width: 65px;
+    height: 35px;
+    padding-top: 2.5px;
+}
+
+#youtube {
+     height: 30px;
+     padding-top: 5px;
+     padding-left: 22.5px;
+}
+
+#twitter {
+    padding-left: 22.5px;
+}
+
+.right-logo {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.right-logo:hover {
+  color: #ff9900;
+
 }

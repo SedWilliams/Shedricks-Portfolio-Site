@@ -22,7 +22,8 @@
 .outsource-section__text {
     font-family: "Monsterrat";
     margin: auto;
-    color: #735f60;
+    color: #ED461D;
+    text-decoration: none;
 }
 
 .outsource-section__logo {

@@ -1,12 +1,28 @@
 import React from "react";
 import "../styles/Navbar.css";
 
-export function Navbar() {
+export const Navbar = () => {
 
     return(
-        <div className="navbar">
-            <h1 className="navbar-text__big"> Welcome to my modern cafe.</h1>
-            <h2 className="navbar-text__little">💡<i>My recreation of an old <a className="navbar-text__little" target="_blank"href="https://en.wikipedia.org/wiki/Salon_(France)">French Salon</a></i>💡</h2>
-        </div>
+        <nav className="navbar">
+
+            <div className="left">
+                <h1 className="left-text">Shedrick Williams</h1>
+            </div>
+
+            <div className="right">
+                <a href="https://www.fiverr.com" className="right-logo__link">
+                    <img src="../../public/imgs/fiverr.png" alt="Fiverr" className="right-logo" id="fiverr"/>
+                </a>
+                <a href="https://www.x.com" className="right-logo__link">
+                    <img src="../../public/imgs/twitter.png" alt="X.com" className="right-logo" id="twitter"/>
+                </a>
+                <a href="https://www.youtube.com" className="right-logo__link">
+                    <img src="../../public/imgs/youtube.png" alt="YouTube" className="right-logo" id="youtube"/>
+                </a>
+            </div>
+        
+        </nav> 
     );
-}
+};
+

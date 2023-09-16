@@ -3,8 +3,8 @@ import React from "react";
 export function About() {
 
     return(
-        <div>
+        <React.Fragment>
             <h1>About me!</h1>
-        </div>
+        </React.Fragment>
     );
 }

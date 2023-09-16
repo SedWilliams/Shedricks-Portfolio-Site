@@ -1,6 +1,6 @@
 {
   "name": "generalaccesspoint",
-  "homepage": "https://SedWilliams.github.io/generalaccesspoint/",
+  "homepage": "https://shedrickwilliams.live",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,8 +13,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.1",
     "express": "^4.18.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0"
   },

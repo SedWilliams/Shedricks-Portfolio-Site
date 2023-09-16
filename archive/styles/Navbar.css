@@ -1,0 +1,60 @@
+.navbar {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#1a1a1a;
+    font-family: "Monospace";
+}
+
+.navbar-text__big {
+    color: #735f60;
+    width: 40%;
+    white-space: nowrap;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Monsterrat";
+    padding: 4%;
+}
+
+@media (max-width: 800px) {
+    .navbar-text__big {
+        font-size: 8vw;
+    }
+
+    h2.navbar-text__little {
+        font-size: 4vw;
+    }
+    
+    a.navbar-text__little {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .navbar-text__big {
+        font-size: 5vw;
+    }
+
+    a.navbar-text__little {
+        font-size: 2vw;
+    }
+
+    h2.navbar-text__little {
+        font-size: 2vw;
+    }
+}
+.navbar-text__little {
+    color: #735f60;
+}
+
+a.navbar-text__little {
+    text-decoration: none;
+    color: #735f60;
+}
+
+a.navbar-text__little:hover {
+    text-decoration: underline;
+}

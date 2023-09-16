@@ -1,0 +1,14 @@
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    background-image: url("../imgs/knights.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    color:#E0E0E0;
+    position: absolute;
+}
