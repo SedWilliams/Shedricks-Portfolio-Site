@@ -14,7 +14,7 @@
 }
 
 .split-image__profile {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   border-radius: 50%;
 }
@@ -28,7 +28,11 @@
   .split-image,
   .split-bio {
     flex: 1;
-    width: 100%;
+    width: 90%;
+  }
+
+  .split-bio__buttons a {
+      margin-bottom: 50px !important;
   }
 }
 
@@ -85,6 +89,7 @@
     cursor: pointer;
     font-family: "Montserrat";
     opacity: 100%;
+    color: #E0E0E0;
 }
 
 .split-bio__buttons button:hover {

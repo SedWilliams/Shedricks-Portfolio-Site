@@ -13,7 +13,7 @@ export const Home = () => {
         <React.Fragment>
             <Navbar />
 
-            <SplitPane bioHeader={"About me"} image={"/imgs/github.png"} projects={projects}/>
+            <SplitPane bioHeader={"About me"} projects={projects}/>
 
             <NewsletterForm />
 

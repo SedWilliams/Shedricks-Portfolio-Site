@@ -34,7 +34,9 @@ const NewsletterForm = () => {
         <div>
           <h2 className="newsletter__title">Subscribe to The Spitball</h2>
           <p className="newsletter__description">
-            And receive extensive programming notes and cheatsheets, for technologies like JavaScript, React, HTML, CSS, Python, Rust, and various backend tooling!           
+              Upcoming: <span style={{fontWeight: 'bold'}}>
+              Extensive Planning Framework!</span> Subscribe to gain free access to my planning framework which keeps me efficient,
+              productive, and free from burnout!
           </p>
           <form onSubmit={handleSubmit}>
 

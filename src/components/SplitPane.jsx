@@ -11,7 +11,7 @@ const SplitPane = ({ bio, image="imgs/github.png", bioHeader, projects}) => {
     <div className="split-pane">
       <div className="split-image">
         <img
-          src={image} alt="Your Name"
+          src={image} alt="Me"
           className="split-image__profile"
         />
       </div>
@@ -22,7 +22,7 @@ const SplitPane = ({ bio, image="imgs/github.png", bioHeader, projects}) => {
         </p>
         <div className='split-bio__buttons'>
             <a onClick={handleScrollClick}>View some projects</a>
-            <a id="theSpitballButton"><button>The Spitball</button></a>
+            <a id="theSpitballButton" href='/#TheSpitball'><button>The Spitball</button></a>
         </div>
       </div>
     </div>
