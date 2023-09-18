@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect, scrollIntoView } from 'react';
 import '../styles/SplitPane.css';
 
-const SplitPane = ({ bio, image="imgs/github.png", bioHeader}) => {
+const SplitPane = ({ bio, image="imgs/github.png", bioHeader, projects}) => {
+
+    const handleScrollClick = () => {
+        projects.current.scrollIntoView({ behavior: 'smooth' });
+    } 
+
   return (
     <div className="split-pane">
       <div className="split-image">
@@ -16,7 +21,8 @@ const SplitPane = ({ bio, image="imgs/github.png", bioHeader}) => {
                 Hello, my name is Shedrick. And I am a 17 year old <span className='bio-text__special'>Programmer, Videographer, and Photographer.</span> I currently live to <span className='bio-text__special'>serve</span> others, <span className='bio-text__special'>achieve</span> highly as an individual, <span className='bio-text__special'>express</span> my ideas, and <span className='bio-text__special'>connect</span> to others with similar interests and thought processes.
         </p>
         <div className='split-bio__buttons'>
-            <a rel='noopener' href="#portfolio-grid" ><button>Projects</button></a>
+            <a onClick={handleScrollClick}>View some projects</a>
+            <a id="theSpitballButton"><button>The Spitball</button></a>
         </div>
       </div>
     </div>

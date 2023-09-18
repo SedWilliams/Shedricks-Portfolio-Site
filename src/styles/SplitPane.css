@@ -22,13 +22,13 @@
 /* Mobile */
 @media (max-width: 768px) {
   .split-pane {
-    flex-direction: column; /* Stack elements vertically on mobile */
+    flex-direction: column;
   }
 
   .split-image,
   .split-bio {
     flex: 1;
-    width: 100%; /* Take up the full width on mobile */
+    width: 100%;
   }
 }
 
@@ -84,8 +84,38 @@
     transition: ease box-shadow 0.2s;
     cursor: pointer;
     font-family: "Montserrat";
+    opacity: 100%;
 }
 
 .split-bio__buttons button:hover {
     box-shadow: 0px 0px 8px 2px #F06543;
 }
+
+
+.split-bio__buttons a {
+    flex: 1;
+    margin: 10px 10px 10px 0px;
+    padding: 15px 15px 15px 0px;
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrat";
+    
+
+    transition: opacity 0.3s, transform 0.3s, font-size 0.3s;
+    opacity: 70%;
+    font-size: 17px;
+    text-decoration: none;
+    color: #272B2B;
+}
+
+.split-bio__buttons a:hover {
+    opacity: 100%; 
+    transform: translateY(5px);
+    font-size: 17.5px;
+}
+
+#theSpitballButton {
+    opacity: 100% !important;
+}
+
+

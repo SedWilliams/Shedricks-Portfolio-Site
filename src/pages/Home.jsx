@@ -6,16 +6,19 @@ import supabase from "../supabase";
 import PortfolioGrid from "../components/PortfolioGrid";
 
 export const Home = () => {
-    
+
+    const projects = React.useRef(null);
+
     return(
         <React.Fragment>
             <Navbar />
 
-            <SplitPane bioHeader={"About me"} image={"/imgs/github.png"}/>
+            <SplitPane bioHeader={"About me"} image={"/imgs/github.png"} projects={projects}/>
 
             <NewsletterForm />
 
-            <PortfolioGrid />
+            <PortfolioGrid scrollToReference={projects}/>
+
         </React.Fragment>
     );
 };

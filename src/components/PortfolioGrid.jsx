@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/PortfolioGrid.css';
 
-const PortfolioGrid = () => {
+const PortfolioGrid = ({scrollToReference}) => {
   const imageUrls = [
     'https://via.placeholder.com/200',
     'https://via.placeholder.com/200',
@@ -21,7 +21,7 @@ const PortfolioGrid = () => {
 
   return (
     <a id="portfolio-grid">
-          <div className="portfolio-grid">
+          <div className="portfolio-grid" ref={scrollToReference}>
             {renderGridItems()}
           </div>
     </a>
