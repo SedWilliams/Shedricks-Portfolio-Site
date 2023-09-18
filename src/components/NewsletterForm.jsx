@@ -1,34 +1,43 @@
 import React, { useState } from 'react';
 import '../styles/NewsletterForm.css';
+import supabase from '../supabase';
+import { Post } from '../supabase';
 
-const NewsletterForm = () => { // Renamed function to NewsletterForm
+const NewsletterForm = () => {
   const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);  
+  const [changed, setChanged] = useState(0);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+    setChanged(changed + 1);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add logic here to send the email to your server for processing
-    // For this example, we'll simply set "subscribed" to true
-    setSubscribed(true);
+
+    if(changed != 0) {
+        Post(email);
+        setSubscribed(true);
+    } else {
+        console.log("No email detected.");
+    }
   };
 
   return (
     <div className="newsletter">
       {subscribed ? (
         <div className="newsletter__success-message">
-          <p>Check your inbox!</p>
+          <p>Expect some value in your inbox!</p>
         </div>
       ) : (
         <div>
           <h2 className="newsletter__title">Subscribe to The Spitball</h2>
           <p className="newsletter__description">
-            Stay up-to-date with our latest news and updates.
+            And receive extensive programming notes and cheatsheets, for technologies like JavaScript, React, HTML, CSS, Python, Rust, and various backend tooling!           
           </p>
           <form onSubmit={handleSubmit}>
+
             <input
               type="email"
               placeholder="Enter your email"
