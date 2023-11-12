@@ -7,7 +7,7 @@ export const Navbar = () => {
         <nav className="navbar">
 
             <div className="left">
-                <a href="https://shedrickwilliams.live" style={{textDecoration: 'none'}}><h1 className="left-text">Shedrick Williams</h1></a>
+                <a href="https://shedrick-williams-sedwilliams.vercel.app/" style={{textDecoration: 'none'}}><h1 className="left-text">Shedrick Williams</h1></a>
             </div>
 
             <div className="right">
