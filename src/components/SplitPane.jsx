@@ -1,7 +1,7 @@
 import React, { useState, useEffect, scrollIntoView } from 'react';
 import '../styles/SplitPane.css';
 
-const SplitPane = ({ bio, image="imgs/github.png", bioHeader, projects}) => {
+const SplitPane = ({ bio, image, bioHeader, projects}) => {
 
     const handleScrollClick = () => {
         projects.current.scrollIntoView({ behavior: 'smooth' });
@@ -11,7 +11,7 @@ const SplitPane = ({ bio, image="imgs/github.png", bioHeader, projects}) => {
     <div className="split-pane">
       <div className="split-image">
         <img
-          src={image} alt="Me"
+          src={"../../public/imgs/me.jpg"} alt="Me"
           className="split-image__profile"
         />
       </div>
