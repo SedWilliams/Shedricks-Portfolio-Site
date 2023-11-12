@@ -31,6 +31,9 @@ One of the first out of a few projects I've built to completion (it will always 
 | Status | As of | Reason |
 | --- | --- | --- |
  Down | 11/10/23 | updating UI, migrating from ghpages to vercel
+ Live | 11/12/23 | Deployed to vercel
+
+<p></p>
 
 <style>
     td, th {
