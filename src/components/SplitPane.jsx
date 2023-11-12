@@ -11,7 +11,7 @@ const SplitPane = ({ bio, image, bioHeader, projects}) => {
     <div className="split-pane">
       <div className="split-image">
         <img
-          src={"../../public/imgs/me.jpg"} alt="Me"
+          src={"/imgs/me.jpg"} alt="Me"
           className="split-image__profile"
         />
       </div>
