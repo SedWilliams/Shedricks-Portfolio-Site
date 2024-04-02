@@ -39,7 +39,7 @@ function SignupForm() {
                                     type="email"
                                     placeholder="example@example.com"
                                     value={email}
-                                    onChange={handleEmailChange}
+                                    onChange={ e => {setEmail(e)}}
                                 />
                             </label>
                             <button type="submit">Pre-order</button>
